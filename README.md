@@ -1,4 +1,4 @@
-# PS Comp 2018
+# PS Comp 2019
 
 Repositório com as coisas públicas para o Processo Seletivo da Comp.
 
