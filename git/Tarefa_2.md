@@ -1,13 +1,13 @@
 # Tarefa 2
 
-Nesta tarefa seu dever será completar os espaços designados com suas próprias palavras, mas seguindo o tema indicado. Após modificar o arquivo inteiro você deverá fazer um commit com suas modificações e dar push nele para o seu branch do repositório.
+Nesta tarefa, seu dever será completar os espaços designados com suas próprias palavras, mas seguindo o tema e o gênero indicado. Após modificar o arquivo inteiro você deverá fazer um commit com suas modificações e dar push nele para o seu branch do repositório.
 
 Por exemplo:
 
 ```
 O meu nome é [NOME_PRÓPRIO] e eu gosto de [TIPO_DE_COMIDA].
 ```
-deve ficar, após suas mudanças, assim:
+deve ficar, após as mudanças, assim:
 
 ```
 O meu nome é João e eu gosto de feijoada.
