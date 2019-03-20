@@ -17,4 +17,4 @@ As instruções da tarefa 2 se encontram no arquivo "Tarefa_2.md". Quando você 
 
 ## Etapas finais
 
-Quando você terminar as duas tarefas o seu próximo passo é fazer um "pull request" de modo a enviar seu "branch" para a "master". Para isso, você tem que entrar no site do GitHub, encontrar o branch desta tarefa no seu repositório e fazer o "pull request". Caso tudo esteja certo, nós da equipe vamos a aprovar o "request".
+Quando terminar as duas tarefas o seu próximo passo é fazer um "pull request" de modo a enviar seu "branch" para a "master". Para isso, você tem que entrar no site do GitHub, encontrar o branch desta tarefa no seu repositório e fazer o "pull request". Caso tudo esteja certo, nós da equipe vamos a aprovar o "request".
