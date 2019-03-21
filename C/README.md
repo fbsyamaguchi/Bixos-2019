@@ -1,12 +1,12 @@
 # C
+A segunda aula vai ter como tema a programação em C, porém, para não ser algo muito longo e cansativo, só vamos passar bem por cima pelos tópicos da aula. Por isso, é importante que, antes da aula, estudem por conta própria para saber pelo menos o básico de C, recomendo o seguinte:
 
-Primeiramente, é importante que já saibam o básico de C, recomendo o seguinte:
 * [Learn-C][learnc] - Um tutorial interativo de C, em inglês (Até a parte de Structures);
-* [Material de MAC2166][mac2166] - Apostila de MAC2166 (Introdução à Computação de vocês) sobre C.
+* [Material de MAC2166][mac2166] - Apostila de MAC2166 (Introdução à Computação da grande área Elétrica) sobre C.
 
-Além disso, existe o maravilhoso Google e o Stack Overflow.
+Além disso, existe o maravilhoso Google e o Stack Overflow ~~melhor site~~.
 
-Qualquer dúvida podem me perguntar!
+Lembrando também que qualquer dúvida que vocês tiverem, podem perguntar, tanto para seus veteranos como no fórum, não precisam ter vergonha :)
 
 ---
 
