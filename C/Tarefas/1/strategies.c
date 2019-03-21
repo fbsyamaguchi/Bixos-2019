@@ -68,9 +68,8 @@ void onix_strategy_run(void) {
 
 void estrela(void) {
 
-    // printf("Estrategia 'Estrela' testada!\n");
-    int8_t turn_speed_multiplier = 1; /**< Turn speed multiplier */
-    uint16_t turn_time = 0;           /**< Turn time */
+    turn_speed_multiplier = 1; /**< Turn speed multiplier */
+    turn_time = 0;           /**< Turn time */
 
     distance_sensors_update();
 
@@ -144,8 +143,6 @@ void dibre(void) {
     } else {
         motors(20, 20);
     }
-
-    // printf("Estrategia 'Dibre' testada!\n");
 }
 
 void arco_esquerda(void) {
@@ -178,7 +175,6 @@ void arco_esquerda(void) {
     } else {
         motors(100, 0);
     }
-    // printf("Estrategia 'Arco esquerda' testada!\n");
 }
 
 void defensiva(void) {
@@ -199,12 +195,10 @@ void defensiva(void) {
     } else {
         motors(speed_left, speed_right);
     }
-    // printf("Estrategia 'Defensiva' testada!\n");
 }
 
 void emergencia(void) {
     motors(MAX_SPEED, MAX_SPEED);
-    // printf("Estrategia 'Emergencia' testada!\n");
 }
 
 void calibra_estrela(void) {
@@ -243,7 +237,6 @@ void calibra_estrela(void) {
     }
 
     motors(BASE_SPEED, BASE_SPEED);
-    // printf("Estrategia 'Calibra estrela' testada!\n");
 }
 
 static void pid(float kp, float ki, float kd, int16_t base_speed, int8_t* speed_left, int8_t* speed_right) {
@@ -314,12 +307,11 @@ void swing_search(bool swing_start){
         swing_speed_left = - swing_speed_left;
         swing_speed_right = - swing_speed_right;
     }
-    //  printf("Estrategia 'Defensiva' testada!\n");
 }
 
 void pulse_search(){
 
-    if get_timer(timer) > 2000 {
+    if [get_timer(timer) > 2000] {
         motors(PULSE_SPEED,PULSE_SPEED);
         reset_timer(&timer);
     }
@@ -365,7 +357,6 @@ void full_bomba(bool delayed) {
         delayed = false;
     }
     motors(MAX_SPEED, 75);
-    // printf("Estrategia 'Full bomba' testada!\n");
 }
 
 void static_defensive(bool delayed) {
@@ -380,7 +371,7 @@ void static_defensive(bool delayed) {
             reversion_left();
         }
 
-    } else if ((sensors[DS_LEFT] > LONG_DISTANCE && sensors[DS_LEFT] < SHORT_DISTANCE) &&
+    } elseif ((sensors[DS_LEFT] > LONG_DISTANCE && sensors[DS_LEFT] < SHORT_DISTANCE) &&
                (sensors[DS_RIGHT] > LONG_DISTANCE && sensors[DS_RIGHT] < SHORT_DISTANCE)) {
         motors(60, 80);
     } else if (sensors[DS_LEFT] > LONG_DISTANCE && sensors[DS_LEFT] < SHORT_DISTANCE) {
@@ -392,11 +383,10 @@ void static_defensive(bool delayed) {
     } else {
         motors(0, 0);
     }
-    // printf("Estrategia 'Statico defensivo' testada!\n");
 }
 
 void swing_defensive(bool delayed) {
-    if (delayed = true) {
+    if (delayed == true) {
         delayed = false;
     }
 
@@ -419,41 +409,8 @@ void swing_defensive(bool delayed) {
     } else {
         swing_search(0);
     }
-    // printf("Estrategia 'Swing defensivo' testada!\n");
 }
 
-void arc(bool delayed) {
-    if (delayed == true) {
-        delayed = false;
-        desvio = 0;
-    
-
-    if (desvio == 0){
-        desvio = 1;
-    }
-
-    if (line_see(LS_RIGHT) || line_see(LS_LEFT)) {
-        if(sensors[LS_LEFT] < sensors[LS_RIGHT]){
-            reversion_right();
-        } else{
-            reversion_left();
-        }
-
-
-    } else if ((sensors[DS_LEFT] > LONG_DISTANCE && sensors[DS_LEFT] < SHORT_DISTANCE) &&
-               (sensors[DS_RIGHT] > LONG_DISTANCE && sensors[DS_RIGHT] < SHORT_DISTANCE)) {
-        motors(60, 85);
-    } else if (sensors[DS_LEFT] > LONG_DISTANCE && sensors[DS_LEFT] < SHORT_DISTANCE) {
-        motors(0, 85);
-    } else if (sensors[DS_RIGHT] > LONG_DISTANCE && sensors[DS_RIGHT] < SHORT_DISTANCE) {
-        motors(60, 0);
-    } else if (sensors[DS_LEFT] > SHORT_DISTANCE || sensors[DS_RIGHT] > SHORT_DISTANCE) {
-        motors(MAX_SPEED, MAX_SPEED);
-    } else {
-        motors(0, 0);
-    }
-    //  printf("Estrategia 'Arco' testada!\n");
-}
 
 void toquinho(bool delayed) {
     if (delayed == true) {
@@ -479,7 +436,6 @@ void toquinho(bool delayed) {
     } else {
         pulse_search();
     }
-    // printf("Estrategia 'Toquinho' testada!\n");
 }
 
 
@@ -490,13 +446,12 @@ void estrelinha(bool delayed) {
 
     straight_search();
 
-   if ;(line_see(LS_RIGHT) || line_see(LS_LEFT)) {
+   if (line_see(LS_RIGHT) || line_see(LS_LEFT)) {
         if(sensors[LS_LEFT] < sensors[LS_RIGHT]){
             reversion_right();
         } else{
             reversion_left();
         }
-
 
     } else if ((sensors[DS_LEFT] > LONG_DISTANCE && sensors[DS_LEFT] < SHORT_DISTANCE) &&
                (sensors[DS_RIGHT] > LONG_DISTANCE && sensors[DS_RIGHT] < SHORT_DISTANCE)) {
@@ -508,5 +463,36 @@ void estrelinha(bool delayed) {
     } else if (sensors[DS_LEFT] > SHORT_DISTANCE || sensors[DS_RIGHT] > SHORT_DISTANCE) {
         motors(75, MAX_SPEED);
     }
-    //  printf("Estrategia 'Estrelinha' testada!\n");
+}
+
+void arc(bool delayed) {
+    if (delayed == true) {
+        delayed = false;
+        desvio = 0;
+    }
+
+    if (desvio == 0){
+        desvio = 1;
+    }
+
+    if (line_see(LS_RIGHT) || line_see(LS_LEFT)) {
+        if(sensors[LS_LEFT] < sensors[LS_RIGHT]){
+            reversion_right();
+        } else{
+            reversion_left();
+        }
+
+
+    } else if ((sensors[DS_LEFT] > LONG_DISTANCE && sensors[DS_LEFT] < SHORT_DISTANCE) &&
+               (sensors[DS_RIGHT] > LONG_DISTANCE && sensors[DS_RIGHT] < SHORT_DISTANCE)) {
+        motors(60, 85);
+    } else if (sensors[DS_LEFT] > LONG_DISTANCE && sensors[DS_LEFT] < SHORT_DISTANCE) {
+        motors(0, 85);
+    } else if (sensors[DS_RIGHT] > LONG_DISTANCE && sensors[DS_RIGHT] < SHORT_DISTANCE) {
+        motors(60, 0);
+    } else if (sensors[DS_LEFT] > SHORT_DISTANCE || sensors[DS_RIGHT] > SHORT_DISTANCE) {
+        motors(MAX_SPEED, MAX_SPEED);
+    } else {
+        motors(0, 0);
+    }
 }

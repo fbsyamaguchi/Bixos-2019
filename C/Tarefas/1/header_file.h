@@ -86,8 +86,8 @@ void motors_straight_line(int8_t speed_left, int8_t speed_right);
 uint16_t get_timer(uint16_t timer);
 void reset_timer(uint16_t* timer);
 bool is_line_sensor_high(line_sensor_position_t sensor);
-bool line_see(sensor_position_t sensor);
+bool line_see();
 void test_preparation(void);
 
 
-  // __HEADER_FILE_H__
+ // __HEADER_FILE_H__

@@ -48,7 +48,7 @@ uint32_t get_sensor_value(sensor_position_t sensor) {
 }
 
 bool line_see(sensor_position_t sensor){
-    if(sensors[sensor] < LINE_VALUE){
+    if sensors[sensor] < LINE_VALUE {
         return true;
     }
     return false;

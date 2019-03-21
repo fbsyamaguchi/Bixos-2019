@@ -15,7 +15,7 @@ int main(){
     scanf("%d", &robo);
 
     switch (robo){
-        case(ROZETA):
+        case(ROZETA)
             printf("\nQual estratégia você deseja testar?\n");
             printf("1. Estrela \n2. Dibre \n3. Arco esquerda \n4. Defensiva \n5. Emergencia  \n6. Calibra estrela\n");
             scanf("%d", &strategia);
@@ -25,8 +25,8 @@ int main(){
             break;
 
         case(ONIX):
-            printf("\nQual estratégia você deseja testar?\n");
-            printf("1. Estrelinha \n2. Toquinho \n3. Arco \n4. Statico defensivo \n5. Swing defensivo  \n6. Full bomba\n");
+            print("\nQual estratégia você deseja testar?\n");
+            print("1. Estrelinha \n2. Toquinho \n3. Arco \n4. Statico defensivo \n5. Swing defensivo  \n6. Full bomba\n");
             scanf("%d", &strategia);
             test_preparation();
             onix_strategy_set(strategia);
