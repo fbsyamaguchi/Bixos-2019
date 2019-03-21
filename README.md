@@ -10,10 +10,11 @@ Olá bixos! Esse é o repositório com o que vocês precisarão aprender para es
 
 Instalem antes tudo o que for necessário para realizar as tarefas do Processo Seletivo. Instruções para fazer isso encontram-se na pasta [Instalando o necessário](https://github.com/ThundeRatz/Bixos-2019/tree/master/Instalando%20o%20necess%C3%A1rio).
 
-É importante que já vejam a parte dos tutoriais de C logo (estarão disponíveis depois da primeira aula). Apesar de alguns de vocês já terem C em MAC2166, algumas coisas que vocês ainda não viram serão necessárias.
+É importante que já vejam a parte dos tutoriais de C logo. Apesar de alguns de vocês já terem C em MAC2166, algumas coisas que vocês ainda não viram serão necessárias.
 
 O planejamento atual das aulas é esse:
-* Git - 21/03 - 18h (Já tenham uma conta no GitHub)
-* C - 04/04 -  18h
+* Git - 22/03 - 18h  (Já tenham uma conta no GitHub)
+* C - 04/04 - 18h
 * Embarcados - 05/04 - 18h 
 
+Todas as aulas serão na sala MZ-02 do prédio da Mecânica.
