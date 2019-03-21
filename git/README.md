@@ -31,7 +31,7 @@ Já usando SSH, não será necessário digitar as informações de sua conta tod
 
 No caso desse repositório, o comando seria:
 
-`git clone https://github.com/ThundeRatz/Bixos-2018.git`
+`git clone https://github.com/ThundeRatz/Bixos-2019.git`
 
 ### Usando SSH
 
@@ -43,7 +43,7 @@ Feita essa configuração, o processo de clonar o repositório é basicamente o 
 
 No caso desse repositório, o comando seria:
 
-`git clone git@github.com:ThundeRatz/Bixos-2018.git`
+`git clone git@github.com:ThundeRatz/Bixos-2019.git`
 
 ## Trabalhando com o repositório
 
@@ -100,31 +100,31 @@ Para fazer um fork, basta ir ao repositório desejado e clicar em "Fork" no cant
 
 Algo a mais que é utilizado ao trabalhar com forks é múltiplos repositórios remotos. Por exemplo, você tem um fork clonado no seu computador e o repositório original fez mais mudanças, logo, seu fork está desatualizado. Para atualizá-lo, precisaria dar pull no repositório original e dar push no fork. Como fazer isso?
 
-Para começar, utilize o comando `git remote -v` para ver os repositórios remotos. No meu caso, clonei o repositório Bixos-2018 original, então, a saída que esse comando mostra é a seguinte:
+Para começar, utilize o comando `git remote -v` para ver os repositórios remotos. No meu caso, clonei o repositório Bixos-2019 original, então, a saída que esse comando mostra é a seguinte:
 ```
-origin  https://github.com/ThundeRatz/Bixos-2018.git (fetch)
-origin  https://github.com/ThundeRatz/Bixos-2018.git (push)
+origin  https://github.com/ThundeRatz/Bixos-2019.git (fetch)
+origin  https://github.com/ThundeRatz/Bixos-2019.git (push)
 ```
 
 Para poder modificar o fork, preciso adicionar o "link" dele nessa lista de repositórios remotos. Para fazer isso, utiliza-se o comando `git remote add <nome local do remoto> <link do repositório>`. O nome local é escolhido por você.
 
 No meu caso, para adicionar meu fork, preciso rodar o seguinte comando:
-`git remote add meu_fork https://github.com/erickotsuka/Bixos-2018.git`
+`git remote add meu_fork https://github.com/erickotsuka/Bixos-2019.git`
 
 Para visualizar as mudanças, rode novamente o comando `git remote -v`. No meu caso, obtenho a saída:
 ```
-meu_fork        https://github.com/erickotsuka/Bixos-2018.git (fetch)
-meu_fork        https://github.com/erickotsuka/Bixos-2018.git (push)
-origin  https://github.com/ThundeRatz/Bixos-2018.git (fetch)
-origin  https://github.com/ThundeRatz/Bixos-2018.git (push)
+meu_fork        https://github.com/erickotsuka/Bixos-2019.git (fetch)
+meu_fork        https://github.com/erickotsuka/Bixos-2019.git (push)
+origin  https://github.com/ThundeRatz/Bixos-2019.git (fetch)
+origin  https://github.com/ThundeRatz/Bixos-2019.git (push)
 ```
 
 É possível também alterar esses nomes locais do repositório, com o comando `git remote rename <nome_atual> <novo_nome>`. Então, posso renomear o origin dessa forma: `git remote rename origin thunder`. Isso alterará o nome "origin" para "thunder". Rodando `git remote -v` novamente temos:
 ```
-meu_fork        https://github.com/erickotsuka/Bixos-2018.git (fetch)
-meu_fork        https://github.com/erickotsuka/Bixos-2018.git (push)
-thunder https://github.com/ThundeRatz/Bixos-2018.git (fetch)
-thunder https://github.com/ThundeRatz/Bixos-2018.git (push)
+meu_fork        https://github.com/erickotsuka/Bixos-2019.git (fetch)
+meu_fork        https://github.com/erickotsuka/Bixos-2019.git (push)
+thunder https://github.com/ThundeRatz/Bixos-2019.git (fetch)
+thunder https://github.com/ThundeRatz/Bixos-2019.git (push)
 ```
 
 Assim, para dar pull no repositório original, branch master, utilizo o comando:
@@ -133,7 +133,7 @@ Assim, para dar pull no repositório original, branch master, utilizo o comando:
 E para dar push no fork, na branch master, utilizo o comando:
 `git push meu_fork master`
 
-Agora, digamos que eu tenha feito modificações no meu fork e queira sugerir as mesmas mudanças no repositório original. Para isso, preciso ir ao repositório original no GitHub e clicar em "New pull request", logo acima do conteúdo da pasta. Como estou trabalhando com forks, clique em "compare across forks". Então, no head fork, escolha seu fork. No meu caso, escolho "erickotsuka/Bixos-2018". Ao selecionar seu fork, aparecerá um campo para preencher título e comentário sobre as mudanças, além da comparação entre os dois repositórios para melhor visualização das mudanças. Se estiver tudo certo, clique em "Create pull request".
+Agora, digamos que eu tenha feito modificações no meu fork e queira sugerir as mesmas mudanças no repositório original. Para isso, preciso ir ao repositório original no GitHub e clicar em "New pull request", logo acima do conteúdo da pasta. Como estou trabalhando com forks, clique em "compare across forks". Então, no head fork, escolha seu fork. No meu caso, escolho "erickotsuka/Bixos-2019". Ao selecionar seu fork, aparecerá um campo para preencher título e comentário sobre as mudanças, além da comparação entre os dois repositórios para melhor visualização das mudanças. Se estiver tudo certo, clique em "Create pull request".
 
 Com isso, seu pull request aparecerá para os administradores do repositório original, que podem aceitar, rejeitar e sugerir mudanças ao seu código. Se for aceito, suas mudanças serão colocadas no original.
 
