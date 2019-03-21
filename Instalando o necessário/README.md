@@ -4,7 +4,10 @@ Para realizar as tarefas do Processo Seletivo, é necessário instalar algumas c
 * GCC;
 * Make;
 * Git;
-* ARM-GCC.
+* ARM-GCC;
+* STM32CubeMX;
+* STM32CubeProgrammer.
+* VSCode
 
 Explicaremos o que são essas coisas nas aulas.
 
@@ -86,33 +89,25 @@ This is free software; see the source for copying conditions.  There is NO
 warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 ```
 
+Para instalar o [STM32CubeMX][STM32CubeMX] e o [STM32CubeProgrammer][STM32CubeProgrammer], faça o download clicando em "Get Software" (será necessário criar uma conta no site da ST) e instale normalmente. Adicione o caminho do CubeProgrammer (normalmente C:\Program Files (x86)\STMicroelectronics\STM32Cube\STM32CubeProgrammer\bin) na variável de ambiente Path, como feito anteriormente para o msys2 e arm-gcc. Para o CubeMX, será necessário criar uma nova variável com o nome CUBE_PATH:
+1. Na janela de Variáveis de Ambiente, clique em "Novo"
+2. Digite CUBE_PATH como nome da variável
+3. Coloque o caminho do CubeMX como valor da variável (normalmente C:\Program Files (x86)\STMicroelectronics\STM32Cube\STM32CubeMX)
+4. Clique em Ok. A variável deverá aparecer na lista de variáveis de ambiente.
 
+Provavelmente já te mandaram baixar o Code::Blocks na aula de MAC2166 para editar e compilar seus códigos em C. É melhor que usem um editor de texto separado e compilem pelo terminal com as ferramentas citadas anteriormente, assim já treinam linha de comando. Usamos o [VS Code][vscode] 
+como editor, ele é bastante customizável, com extensões e um terminal integrado que facilitam muito a edição.
 
-### Linux
-No Linux, instale os pacotes utilizando os seguintes comandos no terminal:
+-----
+### Linux e MacOS
+Mande mensagem pra alguém que guiamos as instalações :)
 
-#### Ubuntu
-```bash
-$ sudo apt update
-$ sudo apt install gcc build-essential make git gcc-avr gdb-avr binutils-avr avr-libc avrdude
-```
-
-#### Fedora
-```bash
-$ sudo dnf upgrade
-$ sudo dnf install gcc make git avr-gcc avr-gdb avr-binutils avr-libc avrdude
-```
-
-#### Arch Linux
-```bash
-$ sudo pacman -Syu
-$ sudo pacman -S gcc make git avr-gcc avr-gdb avr-binutils avr-libc avrdude
-```
-
-Há outras distribuições do Linux com gerenciadores de pacotes diferentes. Com uma pesquisa rápida no Google
-você consegue encontrar a forma equivalente para instalar os pacotes na sua distribuição.
+----
 
 Quaisquer dúvidas ou problemas, podem nos procurar.
 
 [msys2]: http://www.msys2.org/
 [arm-gcc]: https://developer.arm.com/-/media/Files/downloads/gnu-rm/8-2018q4/gcc-arm-none-eabi-8-2018-q4-major-win32-sha1.exe?revision=1cf82350-d608-4fdd-8b68-2e771baa13af?product=GNU%20Arm%20Embedded%20Toolchain,32-bit,,Windows,8-2018-q4-major
+[STM32CubeMX]: https://www.st.com/b/en/development-tools/stm32cubemx.html
+[STM32CubeProgrammer]: https://www.st.com/en/development-tools/stm32cubeprog.html
+[vscode]: https://code.visualstudio.com/
