@@ -28,7 +28,7 @@ A interrupção é uma pequena função que é chamada sempre que algum evento e
 
     void HAL_GPIO_EXTI_Callback(uint16_t    GPIO_Pin){}
 
-Assim, quando o botão é apertado tudo que você escrever dentro da função acontecerá. Essa ferramenta poderosa possibilita a equipe a operação de robôs de sumô a distância, mudando estratégias com o simples aperto de um botão (mais especificamente o botão de um app que envia o comanado por bluetooth).
+Assim, quando o botão é apertado tudo que você escrever dentro da função acontecerá. Essa ferramenta poderosa possibilita para a equipe a operação de robôs de sumô a distância, mudando estratégias com o simples aperto de um botão (mais especificamente o botão de um app que envia o comanado por bluetooth).
 
 ## Para você fazer
 
