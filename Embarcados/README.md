@@ -4,7 +4,7 @@ Embarcados são os nossos principais objetos de trabalho dentro da equipe, todo 
 
 Alguns links interessantes para segurar a ansiedade antes da terceira aula do PS:
 
-(Você também pode ir lendo a respeito da [tarefa](https://github.com/ThundeRatz/Bixos-2019/tree/master/embarcados))
+(Você também pode ir lendo a respeito da [tarefa](./Tarefa/README.md))
 
 O que é PWM?
 https://learn.sparkfun.com/tutorials/pulse-width-modulation/all (inglês)
