@@ -17,12 +17,12 @@ O meu nome é João e eu gosto de feijoada.
 
 ## Texto que você deve modificar
 
-Eu vi o [NOME_PRÓPRIO_MASCULINO] em uma mercearia em [CIDADE] ontem. Eu disse a ele como era [ADJETIVO] conhecê-lo pessoalmente, mas eu não queria ser [ADJETIVO], incomodá-lo e pedir um [OBJETO_MASCULINO] ou qualquer outra coisa.
+Eu vi o Erick em uma mercearia em Itajubá ontem. Eu disse a ele como era legal conhecê-lo pessoalmente, mas eu não queria ser legal, incomodá-lo e pedir um vibrador ou qualquer outra coisa.
 
 Ele disse: "Ah, exatamente como você está fazendo agora?"
 
-Eu fui pego de surpresa, e tudo que eu pude dizer foi “Huh?”, mas ele continuou me cortando e indo “huh? Hã? hein?” e fechando a [SUBSTANTIVO_FEMININO] na frente do meu [SUBSTANTIVO_MASCULINO]. Eu fui embora e continuei com minhas compras, e eu o ouvi [VERBO] enquanto eu saía. Quando fui pagar as minhas coisas no caixa, eu o vi tentando sair pelas portas com [NUMERO] [OBJETO_FEMININO_1] em suas mãos sem pagar.
+Eu fui pego de surpresa, e tudo que eu pude dizer foi “Huh?”, mas ele continuou me cortando e indo “huh? Hã? hein?” e fechando a porta na frente do meu ... Eu fui embora e continuei com minhas compras, e eu o ouvi andando enquanto eu saía. Quando fui pagar as minhas coisas no caixa, eu o vi tentando sair pelas portas com 14 calcinhas em suas mãos sem pagar.
 
-A moça do balcão era muito [ADJETIVO] e [ADJETIVO], e disse: "Senhor, você precisa pagar por isso primeiro". No começo ele fingia estar [ADJETIVO] e não a [VERBO], mas acabou se virando e foi pagar.
+A moça do balcão era muito jumenta e vigarista, e disse: "Senhor, você precisa pagar por isso primeiro". No começo ele fingia estar respirando e não a vendo, mas acabou se virando e foi pagar.
 
-Quando ela pegou uma das [OBJETO_FEMININO_1] e começou a escaneá-la várias vezes, ele a deteve e disse a ela para escanear cada uma delas individualmente “para evitar qualquer [TERMO_CIENTIFICO]”, e então se virou e [VERBO] para mim. Depois de escanear cada [OBJETO_FEMININO_1] e colocá-las em uma [OBJETO_FEMININO_2] e começar a dizer o preço, ele continuou interrompendo-a, [VERBO] bem alto.
+Quando ela pegou uma das calcinhas e começou a escaneá-la várias vezes, ele a deteve e disse a ela para escanear cada uma delas individualmente “para evitar qualquer ornitorrinco”, e então se virou e mostrou o dedo do meio para mim. Depois de escanear cada calcinha e colocá-las em uma cesta e começar a dizer o preço, ele continuou interrompendo-a, falando bem alto.
